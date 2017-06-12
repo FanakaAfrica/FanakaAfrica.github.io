@@ -19,7 +19,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-
+  max-width: 100%;
 }
 
 .table{
@@ -39,9 +39,9 @@
 .titles{
 	color: #775F95;
 	font-family: 'Quattrocento', serif;
-	font-size: 40px;
+	font-size: px;
 	padding: 0;
-	height:auto;
+	margin-bottom:0px;
 	
 	
 	
@@ -94,14 +94,13 @@ body {
     font-family: 'Raleway', sans-serif;
    	font-size: 17px;
 	color: #000000;
-	
 	background-color: white;
-	
 	box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.247);
-	
+	max-width: 100%;
+	word-wrap: break-word;
 }
 #small{
-	line-height: 0%;
+	line-height: initial;
 }
 
 
@@ -147,10 +146,7 @@ li a:hover:not(.active) {
   color: white;
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
+
 
 .fa-instagram {
   background: #cd486b;
