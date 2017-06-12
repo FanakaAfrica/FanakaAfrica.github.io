@@ -146,7 +146,10 @@ li a:hover:not(.active) {
   color: white;
 }
 
-
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
 
 .fa-instagram {
   background: #cd486b;
