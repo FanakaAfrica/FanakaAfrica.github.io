@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$("body").css("background-color", "white")
 
 	
-	$(".phoneLogo").click(function(){
+	$(".phonelogo").click(function(){
 		window.location = 'index.html' ; 
 	});
 
