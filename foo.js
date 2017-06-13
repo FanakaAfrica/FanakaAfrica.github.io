@@ -12,7 +12,8 @@ $(document).ready(function(){
 	$("#small p").css("font-size","10px")
 	$("hr").css("margin-bottom", "0");
 	$("hr").css("margin-top", "0");
-	$("body").css("background-color", "white")
+	$("body").css("background-color", "white");
+	$(".fa").css("width", "15px");
 
 	
 	$(".phonelogo").click(function(){
