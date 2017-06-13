@@ -2,35 +2,48 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento|Raleway:300');
 
-.whole{
-	background-image: url("concrete_seamless.png");
-	background-attachment: fixed;
-}
-.mycontent{
-    background-color: white;
-    margin-left:23%;
-    padding:0px;
-	height:auto; 
-	box-shadow: 0px 0px 26px 0px rgba(0,0,0,0.247);
-}
+
+
 
 .logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  height: 454.5;
+  width: 454.5;
   max-width: 100%;
   max-height: 50%;
-  width:200px;
-  height:128px;
+  padding: 0;
+  margin-top: 20px;
+ 
 }
 
-.table{
-	width:auto;
-   	height:auto;
+
+/**************************/
+/*for the body of the site*/
+.titles{
+	margin-top: 0;
+	color: #775F95;
+	font-family: 'Quattrocento', serif;
+	font-size: 35px;
+	padding: 0;
+	margin-bottom:0px;
 	max-width: 100%;
+	word-wrap: break-word;	
 }
 
+p{
+	font-family: 'Comfortaa', cursive;
+
+}
+.mycontent{
+	/*everything that is not the side_menu*/
+    margin-left:23%;
+    padding:0px;
+	height:auto; 
+	background-color: white;	
+}
 #text{
 	text-align: left;
 	margin-left: 10%;
@@ -39,59 +52,51 @@
 	font-size: 18px;
 	max-width: 100%;
 	word-wrap: break-word;
+	background-color: white;
 
 }
-.titles{
-	color: #775F95;
-	font-family: 'Quattrocento', serif;
-	font-size: 35px;
-	padding: 0;
-	margin-bottom:0px;
-	max-width: 100%;
-	word-wrap: break-word;
-	
-	
-	
-}
-
-p{
-	font-family: 'Comfortaa', cursive;
-
-}
-
-hr{
-	
-	color: #D5D2D8;
-	margin-left: 10%;
-	margin-right: 10%;
-	opacity: 0.2;
-}
-
 #inText{
-	
+	/*the horizontal lines in the text under the titles*/
 	color: #D5D2D8;
 	margin-left: 0%;
 	margin-right: 10%;
 	opacity: 0.3;
 }
-
-
-#main_title{
+#names{
+	color:#775F95 ;
 	
-	text-align: center;
-	font-size: 50px;
-	color: #7B5EA0;
-	font-family: 'Abril Fatface', cursive;
-	text-transform:;
+}
+#footer{
+	font-size: 15px;
+}
+mark{
+	background-color: white;
+	color: black;
 }
 
-body {
-    margin: 0;
-    background-image: url("concrete_seamless.png");
-	background-attachment: fixed;
+a{
+	text-decoration: none;
+	color:#775F95 
+}
+h4{
+	font-family: 'Quattrocento', serif;
+}
+#ulshaded,#shaded{
+	 background-color:#F7F6F7;
+	 border-radius: 10px;
 }
 
-.side_menu{
+.table{
+	/*this is for the images in the text dunno why I named them like that*/
+	width:auto;
+   	height:auto;
+	max-width: 100%;
+}
+
+
+/**************************/
+/*stuff for the side_menu*/
+.side_menu{	
     list-style-type: none;
     margin: 0;
     padding: 0px;
@@ -106,10 +111,13 @@ body {
 	max-width: 100%;
 	
 }
-#small{
-	line-height: initial;
+hr{
+	color: #D5D2D8;
+	margin-left: 10%;
+	margin-right: 10%;
+	opacity: 0.2;
+	
 }
-
 
 li a {
     display: block;
@@ -129,11 +137,9 @@ li a:hover:not(.active) {
     background-color: white;
     color: #6D03C0;
 }
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Ubuntu');
-@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-
-/*za buttons*/
+/**************************/
+/*za social media buttons*/
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -168,28 +174,91 @@ li a:hover:not(.active) {
 
 }
 
-#names{
-	color:#775F95 ;
-	font-size: 15px;
+
+/**************************/
+/*for phone and menu button*/
+
+.forPhone{
+	display: none;
+
 }
-#footer{
-	font-size: 15px;
+.phonelogo{
+  max-width: 12.5%;
+  max-height: 12.5%;
+  margin-top: 17px;
+  background-color: white;
+
 }
-mark{
-	background-color: white;
-	color: #6D03C0;
+.hamburger{
+
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:60px;
+  padding:5px 15px 0px 15px;
+  color:#7B5EA0;
+  border:0;
+  font-size:2em;
+  font-weight:100;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+  margin-bottom: 0;
 }
-a{
-	text-decoration: none;
+
+.cross{
+  margin-top: 24px;
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#7B5EA0;
+  border:0;
+  font-size:5.5em;
+  line-height:65px;
+  font-weight:100;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
-h4{
-	font-family: 'Quattrocento', serif;
+.menu{
+	z-index:1000000; 
+	font-weight:lighter; 
+	width:100%; 
+	background:rgba(255, 255, 255,0.8);
+	position:absolute; 
+	text-align:center; 
+	font-size:12px;
+	display: none;
+	color:#7B5EA0;
+	font-family: 'Raleway', sans-serif;
 }
-#ulshaded{
-	 background-color:#F7F6F7;
-	 border-radius: 10px;
+
+.menu ul {
+	margin: 0; 
+	padding: 0; 
+	list-style-type: none; 
+
 }
-#shaded{
- background-color:#F7F6F7;
-	 border-radius: 10px;
+.menu li {
+	display: block;   
+	padding:15px 0 15px 0; 
+	
 }
+.menu ul li a { 
+	text-decoration:none;  
+	margin: 0px; 
+	color:#7B5EA0;
+}
+
+header{
+	display:hide; 
+	font-size:12px;
+}
+span{
+	padding-left:20px;
+}
+
+
