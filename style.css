@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento|Raleway:300');
 
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
 
 
 
@@ -25,12 +26,12 @@
 .titles{
 	margin-top: 0;
 	color: #775F95;
-	font-family: 'Quattrocento', serif;
+	font-family: 'Boogaloo', cursive;
 	font-size: 35px;
 	padding: 0;
 	margin-bottom:0px;
 	max-width: 100%;
-	word-wrap: break-word;	
+	
 }
 
 p{
