@@ -29,7 +29,9 @@ $(document).ready(function(){
 			$( ".hamburger" ).hide();
 			$( ".cross" ).show();
 		});
-		
+	});
+	
+	if($(".cross:visible")){
 		$(".mycontent").click(function(){
 			$(".mycontent").css("-webkit-filter",  "blur(0px)");
 			$(".mycontent").fadeTo(1000, 1);
@@ -39,8 +41,7 @@ $(document).ready(function(){
 			});
 
 		});
-	});
-	
+	}
 		
 		
 
