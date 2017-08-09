@@ -31,9 +31,7 @@ $(document).ready(function(){
 		});
 	});
 	
-	var myCross = $(".cross");
-	
-	if (myCross.is(":visible")){
+	if( $(".hambuger").css('display') == 'none' ){
 		$(".mycontent").click(function(){
 			$(".mycontent").css("-webkit-filter",  "blur(0px)");
 			$(".mycontent").fadeTo(1000, 1);
@@ -45,7 +43,7 @@ $(document).ready(function(){
 		});
 	}
 		
-	
+	if( $(".hambuger").css('display') == 'none' ){
 	$( ".cross" ).click(function() {
 		$(".mycontent").css("-webkit-filter",  "blur(0px)");
 		$(".mycontent").fadeTo(1000, 1);
@@ -55,6 +53,7 @@ $(document).ready(function(){
 		
 		});
 	});
+	}
 	
 	
 });
