@@ -24,7 +24,7 @@ $(document).ready(function(){
 	$( ".menu" ).hide();
 	$( ".hamburger" ).click(function() {
 		$(".mycontent").fadeTo(100, 0.2);
-		$( ".menu" ).show( "slow", function() {
+		$( ".menu" ).slideToggle( "slow", function() {
 			$(".mycontent").css("-webkit-filter",  "blur(5.6px)");
 			$( ".hamburger" ).hide();
 			$( ".cross" ).show();
@@ -36,7 +36,7 @@ $(document).ready(function(){
 	$( ".cross" ).click(function() {
 		$(".mycontent").css("-webkit-filter",  "blur(0px)");
 		$(".mycontent").fadeTo(1000, 1);
-		$( ".menu" ).hide( "slow", function() {
+		$( ".menu" ).slideToggle( "slow", function() {
 		$( ".cross" ).hide();
 		$( ".hamburger" ).show();
 		
