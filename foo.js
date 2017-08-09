@@ -41,15 +41,6 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".mycontent").hover(function(){
-		$(".mycontent").css("-webkit-filter",  "blur(0px)");
-		$(".mycontent").fadeTo(1000, 1);
-		$( ".menu" ).slideToggle( "slow", function() {
-			$( ".cross" ).hide();
-			$( ".hamburger" ).show();
-		});
-		
-	});
 		
 		
 
