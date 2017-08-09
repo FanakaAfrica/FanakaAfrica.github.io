@@ -43,12 +43,13 @@ $(document).ready(function(){
 		});
 	});
 	
-	$(".mycontent").click(function(){
+	$( ".cross" ).click(function() {
 		$(".mycontent").css("-webkit-filter",  "blur(0px)");
 		$(".mycontent").fadeTo(1000, 1);
 		$( ".menu" ).hide( "slow", function() {
-			$( ".cross" ).hide();
-			$( ".hamburger" ).show();
+		$( ".cross" ).hide();
+		$( ".hamburger" ).show();
+		
 		});
 	});	
 	
